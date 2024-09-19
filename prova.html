@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+</head>
+<body>
+    <style>
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #fce3ff;
+    padding-top: 100px;
+}
+.main-container {
+    width: 60%;
+    text-align: center;
+}
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-perfil {
+    text-align: left;
+}
+.info-perfil h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.info-perfil p {
+    font-size: 18px;
+    color: rgb(141, 31, 163);
+}
+.secao-icones {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.caixa-icone {
+    width: 30%;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caixa-icone .topo {
+    background-color: #c9a3df;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-icone .base {
+    background-color: #ac48c5;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-icone img {
+    width: 70px;
+    height: 70px;
+}
+.caixa-icone p {
+    font-size: 16px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 90%;
+    }
+    .secao-icones {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .caixa-icone {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 120px;
+    }
+    .perfil {
+        flex-direction: column;
+    }
+    .foto-perfil {
+        margin-bottom: 20px;
+    }
+    .caixa-icone img {
+        width: 50px;
+        height: 50px;
+    }
+}
+    </style>
+    <div class="main-container">
+        <div class="perfil">
+            <div class="foto-perfil">
+                <img src="https://i.pinimg.com/474x/21/ba/fb/21bafb050afd5108dc8ed62eb4bea0f2.jpg" alt="Foto de Perfil"/>
+            </div>
+            <div class="info-perfil">
+                <h1>ANGELINA PYETRA</h1>
+                <p>ESTUDANTE</p>
+            </div>
+        </div>
+        <div class="secao-icones">
+            <div class="caixa-icone">
+                <div class="topo">
+                    <img src="https://img.icons8.com/?size=100&id=zXD2ZcNjhvjW&format=png&color=000000" alt="Ícone 1">
+                </div>
+                <div class="base">
+                    <p>HEADSET</p>
+                </div>
+            </div>
+            <div class="caixa-icone">
+                <div class="topo">
+                    <img src="https://img.icons8.com/?size=100&id=RqqDJXJdIXjB&format=png&color=000000" alt="Ícone 2">
+                </div>
+                <div class="base">
+                    <p>KOYA</p>
+                </div>
+            </div>
+            <div class="caixa-icone">
+                <div class="topo">
+                    <img src="https://img.icons8.com/?size=100&id=HIbj7WorHLRT&format=png&color=000000" alt="Ícone 3">
+                </div>
+                <div class="base">
+                    <p>FLOWERS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
